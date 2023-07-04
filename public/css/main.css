@@ -1,0 +1,82 @@
+/* Resetowanie domyślnych stylów */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stylowanie tła strony */
+body {
+    background-image: url('/img/bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Stylowanie głównego kontenera */
+.container {
+    max-width: 600px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: #fcd59a;
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Stylowanie tytułu formularza */
+.form-title {
+    font-size: 36px;
+    color: #ff9900; /* Pomarańczowy */
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px #ff9900; /* Dodanie efektu świetlnego */
+}
+
+/* Stylowanie formularza */
+.form-container {
+    margin-bottom: 20px;
+}
+
+/* Stylowanie etykiety */
+label {
+    display: block;
+    font-size: 18px;
+    color: #333; /* Czarny */
+    margin-bottom: 10px;
+}
+
+/* Stylowanie pola tekstowego */
+.form-input {
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc; /* Szary */
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* Stylowanie przycisku */
+.form-submit {
+    width: 100%;
+    height: 40px;
+    background-color: #ff9900; /* Pomarańczowy */
+    color: #fff; /* Biały */
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Stylowanie wyniku */
+.result {
+    display: block;
+    font-size: 18px;
+    color: #cc0000; /* Czerwony */
+    margin-top: 20px;
+}
