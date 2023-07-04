@@ -17,13 +17,8 @@
         </h1>
         <form class="form-container" action="" method="POST">
             <h1>Stwórz formularz</h1>
-            @csrf   
+            @livewire('createform')
         </form>
-        @if (session('result'))
-            <span class="result">
-                {{ session('result') }}, Delivery time  ~{{ session('deliveryTime') }}.
-            </span>
-        @endif
     </div>
     @livewireScripts
 </body>
