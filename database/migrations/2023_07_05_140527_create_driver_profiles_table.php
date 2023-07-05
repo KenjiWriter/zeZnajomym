@@ -16,11 +16,14 @@ return new class extends Migration
         Schema::create('drivers_profiles', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('postcode');
+            $table->string('city');
+            $table->string('street');
             $table->string('code');
             $table->integer('price_type');
-            $table->float('avg_fuel_con');
-            $table->float('fuel_price');
-            $table->float('price_per_km', 12, 2);
+            $table->float('avg_fuel_con')->nullable();
+            $table->float('fuel_price')->nullable();
+            $table->float('price_per_km', 12, 2)->nullable();
             $table->text('zones')->nullable();
             $table->timestamps();
         });

@@ -13,12 +13,10 @@
 <body>
     <div class="container">
         <h1 class="form-title">
-            ZeZnajomym.pl
+            ZeZnajomym.pl BETA
         </h1>
-        <form class="form-container" action="" method="POST">
-            <h1>Stwórz formularz</h1>
-            @livewire('createform')
-        </form>
+        <h1>Stwórz formularz</h1>
+        @livewire('createform')
     </div>
     @livewireScripts
 </body>
