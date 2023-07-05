@@ -80,3 +80,23 @@ label {
     color: #cc0000; /* Czerwony */
     margin-top: 20px;
 }
+
+.zone-container {
+    margin-bottom: 10px;
+}
+
+.zone-label {
+    font-weight: bold;
+}
+
+.input-group {
+    display: flex;
+}
+
+.zone-input {
+    border: 1px solid #ccc; /* Szary */
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

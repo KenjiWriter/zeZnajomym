@@ -13,17 +13,15 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('profile', function (Blueprint $table) {
+        Schema::create('drivers_profiles', function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->string('code');
-            $table->integer('type');
+            $table->integer('price_type');
+            $table->float('avg_fuel_con');
+            $table->float('fuel_price');
             $table->float('price_per_km', 12, 2);
-            $table->float('zone1', 12, 2)->nullable();
-            $table->float('zone2', 12, 2)->nullable();
-            $table->float('zone3', 12, 2)->nullable();
-            $table->float('zone4', 12, 2)->nullable();
-            $table->float('zone5', 12, 2)->nullable();
+            $table->text('zones')->nullable();
             $table->timestamps();
         });
     }
