@@ -15,3 +15,4 @@ use App\Http\Controllers\mainController;
 */
 
 Route::get('/', [mainController::class, 'index'])->name('index');
+Route::get('/id/{id}', [mainController::class, 'requestIndex'])->name('request.index');
